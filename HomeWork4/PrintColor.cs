@@ -6,7 +6,7 @@ using System.Text;
 
 namespace HomeWork4
 {
-    class ColorSet
+    class PrintColor
     {
         public void color(object o)
         {
@@ -15,11 +15,10 @@ namespace HomeWork4
             {
                 if (info.IsDefined(typeof(ConsolColorAttribute)))
                 {
-                    ConsolColorAttribute colorAttribute = info.GetCustomAttribute(typeof(ConsolColorAttribute), true) as ConsolColorAttribute;
+                    ConsolColorAttribute colorAttribute = info.GetCustomAttribute(typeof(ConsolColorAttribute), false) as ConsolColorAttribute;
                     Console.ForegroundColor = colorAttribute.ConsColor;
                     Console.Write(info.GetValue(o) + " ");
                     Console.ResetColor();
-
                 }
                 else
                 {

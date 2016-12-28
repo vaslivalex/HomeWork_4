@@ -11,7 +11,7 @@ namespace HomeWork4
     {
         static void Main(string[] args)
         {
-            ColorSet cs = new ColorSet();
+            PrintColor cs = new PrintColor();
             Car car = new Car("Mersedes", "ML350", 1300, 5, 18);
             Train train = new Train("Hyundai", "HRCS2", 5000000, 25, "пассажирский");
             Airplane airplane = new Airplane("Boeing", "747-400", 442000, 2, 64);
